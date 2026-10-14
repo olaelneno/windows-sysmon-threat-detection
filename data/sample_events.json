@@ -1,0 +1,83 @@
+[
+  {
+    "source": "Security",
+    "event_id": 4625,
+    "timestamp": "2026-10-14T12:00:00Z",
+    "host": "LAB-PC",
+    "ip_address": "192.0.2.10",
+    "target_user_name": "labuser",
+    "logon_type": 3
+  },
+  {
+    "source": "Security",
+    "event_id": 4625,
+    "timestamp": "2026-10-14T12:01:00Z",
+    "host": "LAB-PC",
+    "ip_address": "192.0.2.10",
+    "target_user_name": "labuser",
+    "logon_type": 3
+  },
+  {
+    "source": "Security",
+    "event_id": 4625,
+    "timestamp": "2026-10-14T12:02:00Z",
+    "host": "LAB-PC",
+    "ip_address": "192.0.2.10",
+    "target_user_name": "labuser",
+    "logon_type": 3
+  },
+  {
+    "source": "Security",
+    "event_id": 4625,
+    "timestamp": "2026-10-14T12:03:00Z",
+    "host": "LAB-PC",
+    "ip_address": "192.0.2.10",
+    "target_user_name": "labuser",
+    "logon_type": 3
+  },
+  {
+    "source": "Security",
+    "event_id": 4625,
+    "timestamp": "2026-10-14T12:04:00Z",
+    "host": "LAB-PC",
+    "ip_address": "192.0.2.10",
+    "target_user_name": "labuser",
+    "logon_type": 3
+  },
+  {
+    "source": "Security",
+    "event_id": 4625,
+    "timestamp": "2026-10-14T12:10:00Z",
+    "host": "LAB-PC",
+    "ip_address": "192.0.2.20",
+    "target_user_name": "testadmin",
+    "logon_type": 3
+  },
+  {
+    "source": "Security",
+    "event_id": 4625,
+    "timestamp": "2026-10-14T12:11:00Z",
+    "host": "LAB-PC",
+    "ip_address": "192.0.2.20",
+    "target_user_name": "testadmin",
+    "logon_type": 3
+  },
+  {
+    "source": "Sysmon",
+    "event_id": 1,
+    "timestamp": "2026-10-14T12:20:00Z",
+    "host": "LAB-PC",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -EncodedCommand SQBFAFgA",
+    "user": "LAB\\tester"
+  },
+  {
+    "source": "Sysmon",
+    "event_id": 1,
+    "timestamp": "2026-10-14T12:21:00Z",
+    "host": "LAB-PC",
+    "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -File approved.ps1",
+    "user": "LAB\\tester"
+  }
+]

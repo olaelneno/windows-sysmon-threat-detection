@@ -1,0 +1,13 @@
+test_below_threshold (test_detector.DetectorTests.test_below_threshold) ... ok
+test_encoded_powershell (test_detector.DetectorTests.test_encoded_powershell) ... ok
+test_failed_login_threshold (test_detector.DetectorTests.test_failed_login_threshold) ... ok
+test_invalid_event_pair_rejected (test_detector.DetectorTests.test_invalid_event_pair_rejected) ... ok
+test_naive_timestamp_rejected (test_detector.DetectorTests.test_naive_timestamp_rejected) ... ok
+test_normal_powershell (test_detector.DetectorTests.test_normal_powershell) ... ok
+test_outside_window (test_detector.DetectorTests.test_outside_window) ... ok
+test_separate_ip_not_combined (test_detector.DetectorTests.test_separate_ip_not_combined) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK
