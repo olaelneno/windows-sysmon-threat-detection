@@ -1,0 +1,19 @@
+XML parser: 6 supported events, 1 unsupported events skipped
+test_below_threshold (test_detector.DetectorTests.test_below_threshold) ... ok
+test_encoded_powershell (test_detector.DetectorTests.test_encoded_powershell) ... ok
+test_failed_login_threshold (test_detector.DetectorTests.test_failed_login_threshold) ... ok
+test_invalid_event_pair_rejected (test_detector.DetectorTests.test_invalid_event_pair_rejected) ... ok
+test_naive_timestamp_rejected (test_detector.DetectorTests.test_naive_timestamp_rejected) ... ok
+test_normal_powershell (test_detector.DetectorTests.test_normal_powershell) ... ok
+test_outside_window (test_detector.DetectorTests.test_outside_window) ... ok
+test_separate_ip_not_combined (test_detector.DetectorTests.test_separate_ip_not_combined) ... ok
+test_adjacent_fragments (test_xml_parser.XmlParserTests.test_adjacent_fragments) ... ok
+test_detection_on_xml (test_xml_parser.XmlParserTests.test_detection_on_xml) ... ok
+test_malformed_xml (test_xml_parser.XmlParserTests.test_malformed_xml) ... ok
+test_namespaced_export_and_unsupported_skipped (test_xml_parser.XmlParserTests.test_namespaced_export_and_unsupported_skipped) ... ok
+test_single_event (test_xml_parser.XmlParserTests.test_single_event) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.004s
+
+OK

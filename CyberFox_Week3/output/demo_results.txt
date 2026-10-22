@@ -1,0 +1,3 @@
+Processed 9 events; generated 2 alerts -> output/alerts.json
+[HIGH] REPEATED_FAILED_LOGINS | 2026-10-14T12:04:00+00:00 | 5 failed logons from 192.0.2.10 targeting labuser within 10 minutes
+[MEDIUM] PS_SUSPICIOUS_ARGS | 2026-10-14T12:20:00+00:00 | encoded PowerShell command argument

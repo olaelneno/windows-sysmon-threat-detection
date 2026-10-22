@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+lab_exports/
+data/lab_*.xml
+output/lab_*.json
+*.evtx
