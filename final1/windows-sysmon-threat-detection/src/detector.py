@@ -4,6 +4,7 @@ import json
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from xml_parser import parse_xml_events
 
 
 def parse_time(value):
@@ -74,6 +75,10 @@ def detect(events, threshold=5, window_minutes=10):
 
 
 def load_events(path):
+    if Path(path).suffix.lower() == '.xml':
+        raw, skipped = parse_xml_events(path)
+        print(f'XML parser: {len(raw)} supported events, {skipped} unsupported events skipped')
+        return [normalize(x) for x in raw]
     data = json.loads(Path(path).read_text(encoding='utf-8'))
     if not isinstance(data, list):
         raise ValueError('input must be a JSON array')
@@ -81,7 +86,7 @@ def load_events(path):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Analyze normalized Windows/Sysmon JSON events')
+    parser = argparse.ArgumentParser(description='Analyze normalized JSON or exported Windows/Sysmon XML events')
     parser.add_argument('--input', required=True)
     parser.add_argument('--output', default='output/alerts.json')
     parser.add_argument('--threshold', type=int, default=5)

@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+lab_exports/
+**/lab_exports/
+evaluation/lab_manifest.json
+output/lab_*.json
+*.evtx

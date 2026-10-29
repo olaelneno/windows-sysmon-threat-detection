@@ -1,0 +1,31 @@
+[
+  {
+    "rule_id": "REPEATED_FAILED_LOGINS",
+    "severity": "high",
+    "timestamp": "2026-10-14T12:04:00+00:00",
+    "host": "LAB-PC",
+    "user": "labuser",
+    "source": "Security",
+    "event_id": 4625,
+    "reason": "5 failed logons from 192.0.2.10 targeting labuser within 10 minutes",
+    "evidence": {
+      "ip_address": "192.0.2.10",
+      "target_user_name": "labuser",
+      "count": 5
+    }
+  },
+  {
+    "rule_id": "PS_SUSPICIOUS_ARGS",
+    "severity": "medium",
+    "timestamp": "2026-10-14T12:20:00+00:00",
+    "host": "LAB-PC",
+    "user": "LAB-PC\\labuser",
+    "source": "Sysmon",
+    "event_id": 1,
+    "reason": "encoded PowerShell command argument",
+    "evidence": {
+      "image": "C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe",
+      "command_line": "powershell.exe -EncodedCommand AAAA"
+    }
+  }
+]

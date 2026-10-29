@@ -1,0 +1,16 @@
+{
+  "scenarios": [
+    {
+      "name": "LAB-01 failed logon burst",
+      "file": "../lab_exports/lab_security.xml",
+      "expected_rules": [
+        "REPEATED_FAILED_LOGINS"
+      ]
+    },
+    {
+      "name": "LAB-02 normal process creation",
+      "file": "../lab_exports/lab_sysmon.xml",
+      "expected_rules": []
+    }
+  ]
+}
